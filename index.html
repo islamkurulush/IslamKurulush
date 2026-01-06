@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ислам Курулуш – ЖК Каганат</title>
+    <!-- Основной шрифт Century Gothic с запасными вариантами -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Подключаем файл стилей с параметром версии, чтобы избежать кеширования -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo-link">
+                <!-- Логотип будет подставлен из папки images -->
+                <img src="images/logo.png" alt="Ислам Курулуш логотип" class="logo">
+            </a>
+            <nav class="navigation">
+                <a href="#about">О компании</a>
+                <a href="#project">ЖК «Каганат»</a>
+                <a href="#videos">Видео</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="https://wa.me/996508600006" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <section class="hero">
+        <div class="container">
+            <h1>Строим качество. Строим доверие.</h1>
+            <p>Мы создаём современные и надёжные жилые комплексы в Бишкеке. Наш текущий проект — 14‑этажный ЖК «Каганат».</p>
+            <div class="hero-buttons">
+                <a href="#project" class="btn btn-primary">Смотреть проект</a>
+                <a href="tel:+996508600006" class="btn btn-secondary">Позвонить нам</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>О компании</h2>
+            <p>«Ислам Курулуш» — строительная компания из Бишкека, специализирующаяся на возведении жилых комплексов и коммерческой недвижимости. Мы делаем ставку на качество, технологичность и доверие наших клиентов. За время работы мы завершили 10 успешных проектов. Сейчас мы реализуем жилой комплекс «Каганат» — 14‑этажный дом площадью 20 000 м², который станет визитной карточкой нашей компании.</p>
+        </div>
+    </section>
+
+    <!-- Проект: ЖК Каганат -->
+    <section id="project" class="section project">
+        <div class="container">
+            <h2>ЖК «Каганат»</h2>
+            <p>Жилой комплекс «Каганат» — 14‑этажный дом с современной архитектурой, просторными квартирами и собственным благоустроенным двором. Ниже представлена галерея фасадов и визуализаций комплекса.</p>
+            <div class="gallery">
+                <!-- Галерея изображений. Добавьте файлы building1.png … building8.png в папку images -->
+                <img src="images/building1.png" alt="Фасад ЖК Каганат 1">
+                <img src="images/building2.png" alt="Фасад ЖК Каганат 2">
+                <img src="images/building3.png" alt="Фасад ЖК Каганат 3">
+                <img src="images/building4.png" alt="Фасад ЖК Каганат 4">
+                <img src="images/building5.png" alt="Фасад ЖК Каганат 5">
+                <img src="images/building6.png" alt="Фасад ЖК Каганат 6">
+                <img src="images/building7.png" alt="Фасад ЖК Каганат 7">
+                <img src="images/building8.png" alt="Фасад ЖК Каганат 8">
+            </div>
+        </div>
+    </section>
+
+    <!-- Видео из Instagram -->
+    <section id="videos" class="section videos">
+        <div class="container">
+            <h2>Видео</h2>
+            <p>Познакомьтесь с ходом строительства, оцените локацию и послушайте отзывы клиентов.</p>
+            <div class="video-embed-wrapper">
+                <!-- Встроенные публикации Instagram. Параметр loading="lazy" позволяет отложить загрузку -->
+                <div class="video-embed">
+                    <iframe src="https://www.instagram.com/p/DPRN2DqDXw6/embed" loading="lazy" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                <div class="video-embed">
+                    <iframe src="https://www.instagram.com/p/DO0z0r3iDyc/embed" loading="lazy" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+                <div class="video-embed">
+                    <iframe src="https://www.instagram.com/p/DNx_yLqUEAU/embed" loading="lazy" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>У вас остались вопросы? Свяжитесь с нами по телефону, напишите в WhatsApp или посетите наш офис по адресу.</p>
+            <div class="contact-info">
+                <p><strong>Телефон:</strong> <a href="tel:+996508600006">+996 508 600 006</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/996508600006" target="_blank" rel="noopener">Написать в WhatsApp</a></p>
+                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/islam.kurulush" target="_blank" rel="noopener">@islam.kurulush</a></p>
+                <p><strong>Локация:</strong> <a href="https://maps.app.goo.gl/8sH5ijNoT3De3ZzY7" target="_blank" rel="noopener">Посмотреть на карте</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Ислам Курулуш. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

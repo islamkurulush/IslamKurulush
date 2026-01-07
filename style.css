@@ -312,4 +312,84 @@ body {
   .video-embed {
     padding-bottom: 200%;
   }
+  /* ===== Gallery: mobile slider + desktop grid ===== */
+
+.gallery-slider {
+  position: relative;
+  margin-top: 18px;
+}
+
+/* Трек: на мобильном это “свайп-лента” */
+.gallery-track {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+/* Скрыть скроллбар аккуратно */
+.gallery-track::-webkit-scrollbar { height: 0; }
+.gallery-track { scrollbar-width: none; }
+
+/* Каждая картинка — как “слайд” */
+.gallery-track img {
+  flex: 0 0 100%;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  scroll-snap-align: start;
+  user-select: none;
+}
+
+/* Подсказка “листай” — только на мобилке */
+.gallery-hint {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* Стрелки — по умолчанию скрываем (на мобилке не нужны) */
+.gallery-nav {
+  display: none;
+}
+
+/* ===== Desktop layout ===== */
+@media (min-width: 900px) {
+  /* На ПК превращаем это в сетку */
+  .gallery-track {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    overflow: visible;
+    padding-bottom: 0;
+    scroll-snap-type: none;
+  }
+
+  .gallery-track img {
+    flex: initial;
+    width: 100%;
+    height: 180px;
+    max-height: none;
+    object-fit: cover;
+    scroll-snap-align: unset;
+  }
+
+  .gallery-hint {
+    display: none;
+  }
+
+  /* Если хочешь: стрелки можно показать на ПК и скроллить по “ленте”
+     Но раз мы на ПК делаем сетку — стрелки не обязательны.
+     Оставлю стили на случай, если решишь сделать и на ПК ленту. */
+}
+
+/* ===== Smaller phones tweaks ===== */
+@media (max-width: 420px) {
+  .gallery-track img {
+    max-height: 320px;
+    border-radius: 14px;
+  }
 }
